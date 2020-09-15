@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>test 2 3 recursion</title>
+    </head>
+    <body>
+        <div id="num"></div>
+        <div id="numx"></div>
+        <script type="text/javascript">
+            var i = 0
+            function task() {
+                i++
+                console.log(`递归了${i}次`)
+                document.getElementById("num").innerText = `递归了${i}次`
+                // 使用异步任务来阻止递归的溢出
+                setTimeout(function(){
+                    task()
+                }, 0)
+            }
+            task()
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>test 2 2 exe stack 2</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function task1() {
+                console.log("task 1 : start")
+                task2()
+                console.log("task 1 : end")
+            }
+            function task2() {
+                console.log("task 2 : start")
+                task3()
+                console.log("task 2 : end")
+            }
+            function task3() {
+                console.log("task 3")
+            }
+            task1()
+        </script>
+    </body>
+</html>
