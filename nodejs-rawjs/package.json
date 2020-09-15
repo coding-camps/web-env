@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-rawjs",
+  "version": "1.0.0",
+  "description": "nodejs demo with raw javascript",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "rawjs"
+  ],
+  "author": "Yuheng",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
