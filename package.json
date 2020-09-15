@@ -1,0 +1,13 @@
+{
+  "name": "static-express",
+  "version": "1.0.0",
+  "description": "static web server for dev",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": ""
+  },
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
