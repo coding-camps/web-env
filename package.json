@@ -1,9 +1,10 @@
 {
-  "name": "static-express",
-  "version": "1.0.0",
-  "description": "static web server for dev",
-  "main": "index.js",
-  "license": "MIT",
+  "name": "web-dev-env",
+  "version": "0.0.0",
+  "description": "This is a web dev env composed of traditional frontend and NestJS backend",
+  "author": "jacobson",
+  "private": true,
+  "license": "UNLICENSED",
   "scripts": {
     "dev": ""
   },
