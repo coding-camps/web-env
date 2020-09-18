@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>test 2 1 async traditional</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var p = new Promise(function(reslove){
+                setTimeout(function(){
+                    reslove()
+                }, 1000)
+            })
+            p.then(function(){
+                // 1 秒后执行的逻辑
+                console.log("1 seconds")
+                return new Promise(function(resolve){
+                    setTimeout(function(){
+                        resolve()
+                    },1000)
+                })
+                
+            }).then(function(){
+                // 2 秒后执行的逻辑
+                console.log("2 seconds")
+                return new Promise(function(resolve){
+                    setTimeout(function(){
+                        resolve()
+                    },1000)
+                })
+                
+            }).then(function(){
+                // 3 秒后执行的逻辑
+                console.log("3 seconds")
+                
+            })
+        </script>
+    </body>
+</html>

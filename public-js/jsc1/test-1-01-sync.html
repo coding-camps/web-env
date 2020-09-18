@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Test 1 1 sync</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var a = 1
+            var b = 2
+            var c = a + b
+            console.log(c)
+            
+            var d1 = new Date().getTime()
+            var d2 = new Date().getTime()
+            while(d2-d1<2000) {
+                d2 = new Date().getTime()
+            }
+            console.log(d1, d2)
+        </script>
+    </body>
+</html>

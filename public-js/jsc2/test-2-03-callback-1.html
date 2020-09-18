@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>test 2 1 async traditional</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function test(fn) {
+                console.log(1)
+                fn()
+                console.log(2)
+            }
+            console.log(4)
+            test(function(){
+                console.log(3)
+            })
+            console.log(5)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>test 2 1 async traditional</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            setTimeout(function() {
+                // 1 秒后执行的逻辑
+                console.log("1 seconds")
+                setTimeout(function() {
+                    // 2 秒后执行的逻辑
+                    console.log("2 seconds")
+                    setTimeout(function(){
+                        // 3 秒后执行的逻辑
+                        console.log("3 seconds")
+                    }, 1000)
+                }, 1000)
+            }, 1000)
+        </script>
+    </body>
+</html>
